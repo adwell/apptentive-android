@@ -2,6 +2,7 @@
 # Android intermediate build artifacts
 apptentive-android-sdk/gen/*
 apptentive-android-sdk/out/*
+apptentive-android-sdk/bin/*
 apptentive-testing/gen/*
 apptentive-example/gen/*
 apptentive-example-alternate/gen/*
