@@ -33,9 +33,9 @@
 
 	<string name="apptentive_enjoyment_message_fs">Do you love %s?</string>
 	<string name="apptentive_rating_title">Thank You</string>
-	<string name="apptentive_rating_message_fs">We\'re so happy to hear that you love %s. It\'d be really helpful if you rated us in the Market. Thanks so much for spending some time with us.</string>
+	<string name="apptentive_rating_message_fs">We\'re so happy to hear that you love %s. It\'d be super helpful if you rated the app for us. Thanks and happy travels!</string>
 	<string name="apptentive_rating_rate">Rate %s</string>
-	<string name="apptentive_rating_remind">Remind me Later</string>
+	<string name="apptentive_rating_remind">Remind Me Later</string>
 	<string name="apptentive_rating_no">No Thanks</string>
 	<string name="apptentive_rating_provider_no_android_market">Android Market was not found. Please install Android Market before rating this app.</string>
 	<string name="apptentive_rating_provider_no_mikandi">MiKandi Market was not found. Please install MiKandi Market before rating this app.</string>
