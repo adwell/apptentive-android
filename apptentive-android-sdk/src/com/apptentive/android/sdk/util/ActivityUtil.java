@@ -35,33 +35,7 @@ public class ActivityUtil {
 	 *         false: if the Activity is merely giving way to another Activity defined in the same Application.
 	 */
 	public static boolean isApplicationBroughtToBackground(final Activity activity) {
-		ActivityManager activityManager = (ActivityManager) activity.getSystemService(Context.ACTIVITY_SERVICE);
-		List<ActivityManager.RunningTaskInfo> tasks = null;
-		try {
-			tasks = activityManager.getRunningTasks(1);
-		} catch (SecurityException e) {
-			if(GlobalInfo.isAppDebuggable) {
-				throw e;
-			} else {
-				Log.e("Missing required permission: \"android.permission.GET_TASKS\".", e);
-			}
-			return false;
-		}
-		if (tasks != null && !tasks.isEmpty()) {
-			ComponentName topActivity = tasks.get(0).topActivity;
-			try {
-				PackageInfo pi = activity.getPackageManager().getPackageInfo(activity.getPackageName(), PackageManager.GET_ACTIVITIES);
-				for (ActivityInfo activityInfo : pi.activities) {
-					if(topActivity.getClassName().equals(activityInfo.name)) {
-						return false;
-					}
-				}
-			} catch( PackageManager.NameNotFoundException e) {
-				Log.e("Package name not found: %s", e, activity.getPackageName());
-				return false; // Never happens.
-			}
-		}
-		return true;
+        return false;
 	}
 
 	/**
