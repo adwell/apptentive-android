@@ -80,9 +80,9 @@ public class Apptentive {
 		if(comingFromBackground) {
 			Apptentive.beginSession();
 			prefs.edit().putBoolean(Constants.PREF_KEY_APP_IN_BACKGROUND, false).commit();
-			Apptentive.asyncFetchAppConfiguration();
 		}
-	}
+        Apptentive.asyncFetchAppConfiguration();
+    }
 
 	/**
 	 * Reserved for future use.
